@@ -8,8 +8,6 @@ import { AmexioGridLayoutService, GridConfig, GridConstants} from 'amexio-ng-ext
 })
 export class ViewportComponent2 implements OnInit {
 
-  amexiotechmenus: any;
-
   gridDesktop: GridConfig;
 
   constructor(private _gridlayoutService : AmexioGridLayoutService) { 
