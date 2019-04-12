@@ -22,7 +22,6 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 script: 
- # - rm -rf docs
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.9/mexio-ng-extensions.tgz?raw=true
