@@ -6,16 +6,18 @@
       <amexio-image [path]="'assets/bg12.jpg'"></amexio-image>
     </amexio-viewport-background>
     <amexio-viewport-content-body>
-      <amexio-nav [enable-side-nav-position]="false" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
+      <amexio-nav [transparent]="true" [enable-side-nav-position]="false" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
 
         <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
         <amexio-nav-item position-right [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
-        <amexio-nav-item position-right [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
+        <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
+        </amexio-nav-item>
+        <!-- <amexio-nav-item position-right [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
         <amexio-nav-item position-right [title]="'Gallery'" [icon]="'fa fa-picture-o'" [type]="'button'" style="cursor: pointer;">
-        </amexio-nav-item>
+        </amexio-nav-item> -->
         <amexio-nav-item position-right [title]="'Contact'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
         <amexio-nav-item position-right [icon]="'fa fa-bell fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
@@ -28,8 +30,8 @@
         <amexio-layout-item [fit]="true">
           <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'vertical'" [alignment]="'center'">
             <amexio-layout-item>
-              <amexio-box border-color="blue" [padding]="true" align="'center'">
-                <amexio-label [size]="'large-bold'">
+              <amexio-box border-color="transparent" [padding]="true" align="'center'">
+                <amexio-label [font-color]="'white'" [size]="'large-bold'">
                   LIFE IS BETTER WHEN YOU DANCE....
                 </amexio-label>
               </amexio-box>

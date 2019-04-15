@@ -1,107 +1,49 @@
 <amexio-viewport [type]="'1'" [scrollable]="false">
     <amexio-viewport-content [scrollable]="false">
         <amexio-viewport-background>
-            <amexio-image [path]="'assets/pets.jpg'"></amexio-image>
+            <amexio-image [path]="'assets/living-room1.jpg'"></amexio-image>
         </amexio-viewport-background>
         <amexio-viewport-content-body>
-            <amexio-box border-color="blue" align="right">
-                <amexio-label [enable-click]="true">
-                    IMAGES BY MARK SEBASTIAN
-                </amexio-label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <amexio-label [enable-click]="true">
-                    BACK TO CODROPS ARTICLE
-                </amexio-label>
-            </amexio-box>
-            <amexio-nav [enable-side-nav-position]="true">
 
-                <amexio-nav-item position-left [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
+            <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'cards.com'" [logo]="'assets/cardslogo.png'">
+                <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-user'" [title]="'Login'">
                 </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Gallery'" [icon]="'fa fa-picture-o'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Contact'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-
             </amexio-nav>
-            <amexio-layout-grid [layout]="'LayoutSample1'">
-                <amexio-grid-item [name]="'gridmenu1'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'175px'" [color]="'white'" [bg-image]="'assets/pets3.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Money can buy you a fine dog, but only love can make him wag his tail </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
 
-                <amexio-grid-item [name]="'gridmenu2'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'175px'" [color]="'white'" [bg-image]="'assets/pets6.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                An animal's eyes have the power to speak a great language
-                            </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmenu3'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'200px'" [color]="'white'" [bg-image]="'assets/pets5.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Like all pure creatures, cats are pactical 
 
-                            </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmenu4'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'200px'" [color]="'white'" [bg-image]="'assets/pets1.jpeg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Pets have more love and compassion in them. </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
+            <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
+                <amexio-layout-item [padding]="'0px'" [fit]="true">
+                    <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'center'">
+                        <amexio-layout-item>
+                            <amexio-row>
+                                <amexio-column size="2">
 
-                <amexio-grid-item [name]="'gridlogin'">
-                    <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
-                        <amexio-header-ce [align]="'space-between'">
-                            <amexio-label size="medium-bold">Connect To Us
-                            </amexio-label>
-                            <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                            </amexio-layout-columns>
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <amexio-text-input place-holder="Enter loginId" icon-feedback="true">
-                            </amexio-text-input>
-                            <br>
-                            <amexio-text-input place-holder="Enter Password" icon-feedback="true">
-                            </amexio-text-input>
-                            <amexio-label size="small-bold" font-color="red">
-                                forgot password??
-                            </amexio-label>
-                        </amexio-body-ce>
-                        <amexio-action-ce>
-                            <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
-                            </amexio-floating-button>
-                            <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
-                            </amexio-floating-button>
-                            <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
-                            </amexio-floating-button>
-                        </amexio-action-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-            </amexio-layout-grid>
+                                </amexio-column>
+                                <amexio-label size="large-bold" font-color="white">
+                                    What do you wanna buy today?
+                                </amexio-label>
+                            </amexio-row>
+                            <amexio-row>
+                                <amexio-column size="2" [fit]="false">
+                                </amexio-column>
+                                <amexio-dropdown style="width:200px" [place-holder]="'Choose'" name="category" [field-label]="''" [data]="categories" [display-field]="'name'"
+                                    [value-field]="'id'" [enable-sort]="true" [sort]="'asc'">
+                                </amexio-dropdown>
 
+                                <amexio-text-input style="width:500px" [field-label]="'label'" name="name" [has-label]="false" [place-holder]="'Search'"
+                                    [icon-feedback]="true" class="localsearchtext">
+                                </amexio-text-input>
+                                <amexio-button [label]="'Search'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" [size]="'default'"
+                                    [loading]="false" [block]="false" [bg-color]="'red'">
+                                </amexio-button>
+                                <amexio-column size="2" [fit]="false">
+
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-layout-item>
+                    </amexio-layout-columns>
+                </amexio-layout-item>
+            </amexio-layout-columns>
         </amexio-viewport-content-body>
     </amexio-viewport-content>
 </amexio-viewport>

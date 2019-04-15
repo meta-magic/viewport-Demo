@@ -1,0 +1,8 @@
+.localsearch .inputgroup {
+    display: inline-block!important;
+
+    background: white;
+     /* border-bottom: 1px solid rgba(0, 0, 0, 0.42);  */
+    padding-left: 5px;
+
+};

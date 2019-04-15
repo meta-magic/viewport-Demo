@@ -9,8 +9,18 @@ import { AmexioGridLayoutService, GridConfig, GridConstants} from 'amexio-ng-ext
 export class ViewportComponent2 implements OnInit {
 
   gridDesktop: GridConfig;
-
+  categories: any;
   constructor(private _gridlayoutService : AmexioGridLayoutService) { 
+
+    this.categories = [{
+      id: 'tv',
+      name: 'TV'
+    },
+    {
+      id: 'apartment',
+      name: 'Apartment'
+    }];
+
     this.createLayouts();
     
     // Create the Layouts
