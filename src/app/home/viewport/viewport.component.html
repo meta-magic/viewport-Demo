@@ -1,7 +1,7 @@
 <amexio-viewport [type]="'2'" [scrollable]="true">
   <amexio-viewport-content [scrollable]="false">
     <amexio-viewport-background>
-      <amexio-image [path]="'assets/bg12.jpg'"></amexio-image>
+      <amexio-image [path]="'assets/dance.jpeg'"></amexio-image>
     </amexio-viewport-background>
     <amexio-viewport-content-body>
       <amexio-nav [transparent]="true" [enable-side-nav-position]="false" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
@@ -34,10 +34,12 @@
 
                 </amexio-column>
 
-                <amexio-column size="4" [fit]="false">
+                <amexio-column size="5" [fit]="false">
                   <amexio-box border-color="transparent" [padding]="true" align="'center'">
                     <amexio-label [font-color]="'white'" [size]="'large-bold'">
-                      LIFE IS BETTER WHEN YOU DANCE....
+                      Life is better when you Dance <p>Because Dance is the hidden language of the soul.</p> 
+                      <p>Hand in hand, on the edge of the sand,</p> <p>Let's
+                      dance by the light of the moon!</p>
                     </amexio-label>
                   </amexio-box>
                 </amexio-column>
@@ -80,17 +82,15 @@
                 dance training such as dance fitness,kids fitness,yoga,salsa,bollywood,hiphop etc. </p>
               <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
                 <amexio-layout-item>
-                  <amexio-image [icon-class]="'fa fa-facebook fa-2x '"></amexio-image>
-                </amexio-layout-item>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
+                  </amexio-login-social>
+                                </amexio-layout-item>
                 <amexio-layout-item>
-                  <amexio-image [icon-class]="'fa fa-twitter fa-2x'"></amexio-image>
-                </amexio-layout-item>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)">
+                  </amexio-login-social>                </amexio-layout-item>
                 <amexio-layout-item>
-                  <amexio-image [icon-class]="'fa fa-google-plus fa-2x'"></amexio-image>
-                </amexio-layout-item>
-                <amexio-layout-item>
-                  <amexio-image [icon-class]="'fa fa-linkedin fa-2x'"></amexio-image>
-                </amexio-layout-item>
+<amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>                </amexio-layout-item>
               </amexio-layout-columns>
             </amexio-body-ce>
           </amexio-card-ce>
@@ -114,12 +114,12 @@
           </amexio-card-ce>
         </amexio-column>
       </amexio-row>
-      <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7]" shuffle-interval="2000">
+      <!-- <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7]" shuffle-interval="2000">
         <ng-template let-img amexioTemplate="item">
           <amexio-image [height]="'200px'" path="assets/carousel/{{img}}.jpg">
           </amexio-image>
         </ng-template>
-      </amexio-carousel>
+      </amexio-carousel> -->
 
     </amexio-viewport-content-body>
   </amexio-viewport-content>
