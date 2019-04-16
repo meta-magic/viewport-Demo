@@ -10,6 +10,8 @@ export class ViewportComponent2 implements OnInit {
 
   gridDesktop: GridConfig;
   categories: any;
+  navmenus: any;
+
   constructor(private _gridlayoutService : AmexioGridLayoutService) { 
 
     this.categories = [{
@@ -21,6 +23,29 @@ export class ViewportComponent2 implements OnInit {
       name: 'Apartment'
     }];
 
+    this.navmenus =     this.navmenus = [{
+      "text": "Buy",
+      "icon": "fa fa-shopping-cart",
+      "submenus": [{
+        "text": "Home Buying Guide",
+      }, {
+        "text": "Post your Requirement",
+      }, {
+        "text": "Home Loan",
+      }]
+    },
+    {
+      "text": "Sell",
+      "icon": "fa fa-check",
+      "submenus": [{
+        "text": "Post Your Property"
+      }, {
+        "text": "Propworth Calculator"
+      }, {
+        "text": "Find an Agent"
+      }]
+    }
+    ]
     this.createLayouts();
     
     // Create the Layouts
