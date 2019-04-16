@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.inputClass > amexio-text-input .inputgroup .input-control {
+    line-height: 2.8 !important;
+    width: 600px;
+}
+
+.inputClass > amexio-dropdown .inputgroup .input-control {
+    line-height: 2.8 !important;
+    width: 300px;
+}
