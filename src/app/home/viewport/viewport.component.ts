@@ -50,6 +50,15 @@ export class ViewportComponent implements OnInit {
       }, {
         "text": "Zumba Sessions"
       }]
+    },
+    {
+      "text": "About Us",
+      "icon": "fa fa-address-book-o fa-fw",
+      "submenus": [{
+        "text": "Contact"
+      }, {
+        "text": "Privacy Policies"
+      }]
     }
     ]
   }

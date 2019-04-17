@@ -10,3 +10,7 @@
     line-height: 2.8 !important;
     width: 300px;
 }
+
+.rowClass .flex-row{
+    padding-top: 100px;
+}

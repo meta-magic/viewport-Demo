@@ -1,65 +1,51 @@
 <amexio-viewport [type]="'2'" [scrollable]="true">
   <amexio-viewport-content [scrollable]="false">
+
     <amexio-viewport-background>
       <amexio-image [path]="'assets/dance.jpeg'"></amexio-image>
     </amexio-viewport-background>
-    <amexio-viewport-content-body>
-      <amexio-nav [transparent]="true" [enable-side-nav-position]="false" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
 
+    <amexio-viewport-content-body>
+      <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
         <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
-        <amexio-nav-item position-right [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
-        </amexio-nav-item>
-        <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
-          (onNavItemClick)="externalLink($event)">
-        </amexio-nav-item>
-        <!-- <amexio-nav-item position-right [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
-        </amexio-nav-item>
-        <amexio-nav-item position-right [title]="'Gallery'" [icon]="'fa fa-picture-o'" [type]="'button'" style="cursor: pointer;">
-        </amexio-nav-item> -->
-        <amexio-nav-item position-right [title]="'Contact'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
+        <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
         </amexio-nav-item>
         <amexio-nav-item position-right [icon]="'fa fa-bell fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
         </amexio-nav-item>
       </amexio-nav>
 
+      <div class="rowClass">
+        <amexio-row>
+          <amexio-column size="1" [fit]="false">
+          </amexio-column>
+          <amexio-column size="3" [fit]="false">
+              <amexio-label [font-color]="'white'" [size]="'large'">
+                Life is better when you Dance
+                <p>Because Dance is the hidden language of the soul.</p>
+                <p>Hand in hand, on the edge of the sand,</p>
+                <p>Let's dance by the light of the moon!</p>
+              </amexio-label>
+          </amexio-column>
+        </amexio-row>
+      </div>
 
-
-      <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'">
-        <amexio-layout-item [fit]="true">
-          <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'vertical'" [alignment]="'center'">
-            <amexio-layout-item>
-              <amexio-row>
-                <amexio-column size="1" [fit]="false">
-
-                </amexio-column>
-
-                <amexio-column size="5" [fit]="false">
-                  <amexio-box border-color="transparent" [padding]="true" align="'center'">
-                    <amexio-label [font-color]="'white'" [size]="'large-bold'">
-                      Life is better when you Dance <p>Because Dance is the hidden language of the soul.</p> 
-                      <p>Hand in hand, on the edge of the sand,</p> <p>Let's
-                      dance by the light of the moon!</p>
-                    </amexio-label>
-                  </amexio-box>
-                </amexio-column>
-              </amexio-row>
-
-            </amexio-layout-item>
-          </amexio-layout-columns>
-        </amexio-layout-item>
-      </amexio-layout-columns>
     </amexio-viewport-content-body>
   </amexio-viewport-content>
+
   <amexio-viewport-content>
-    <amexio-viewport-background>
-      <amexio-image [path]="'assets/bg5.jpeg'"></amexio-image>
-    </amexio-viewport-background>
-
-    <amexio-viewport-content-body [scrollable]="true">
-
-      <amexio-row>
-        <amexio-column size="6" [fit]="false">
+      <amexio-viewport-background>
+        <amexio-image [path]="'assets/bg5.jpeg'"></amexio-image>
+      </amexio-viewport-background>
+  
+      <amexio-viewport-content-body [scrollable]="true">
+  
+        <amexio-row>
+        <div class="rowClass">
+        <amexio-row>
+          <amexio-column size="1" [fit]="false">
+          </amexio-column>
+          <amexio-column size="10" [fit]="false">
           <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
             <amexio-header-ce [align]="'space-between'">
               <amexio-label size="medium-bold">About Us
@@ -78,49 +64,63 @@
             </amexio-header-ce>
             <amexio-body-ce>
               <p>
-                We, Moves dance and fitness are leading brand near magarpatta city and amanora township,hadapsar,pune.We provide various
-                dance training such as dance fitness,kids fitness,yoga,salsa,bollywood,hiphop etc. </p>
+                  With an aim to provide quality dance training and making dance available to all, Aerofit dance classes run throughout the year at multiple locations for students from ages four to eighty four providing them with training in various dance styles by expert faculty. The classes give them an opportunity to learn dance, express themselves creatively and perform on stage. Classes are available for children (4 to 6 years), juniors (7 to 11 years) and adults (12 years onwards). </p>
               <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
                 <amexio-layout-item>
                   <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
                   </amexio-login-social>
-                                </amexio-layout-item>
+                </amexio-layout-item>
                 <amexio-layout-item>
-                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)">
-                  </amexio-login-social>                </amexio-layout-item>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'"
+                    [type]="'google'" (onLogin)="onLoginClick($event)">
+                  </amexio-login-social>
+                </amexio-layout-item>
                 <amexio-layout-item>
-<amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
-</amexio-login-social>                </amexio-layout-item>
-              </amexio-layout-columns>
-            </amexio-body-ce>
-          </amexio-card-ce>
-        </amexio-column>
-        <amexio-column size="6" [fit]="false">
-          <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
-            <amexio-header-ce [align]="'space-between'">
-              <amexio-label size="medium-bold">Get In Touch
-              </amexio-label>
-              <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                <amexio-layout-item>
-                  <amexio-image [icon-class]="'fa fa-map-marker'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
+                  </amexio-login-social>
                 </amexio-layout-item>
               </amexio-layout-columns>
-            </amexio-header-ce>
-            <amexio-body-ce>
-              <p>
-                AEROFIT FUN & FITNESS 1st floor Nirvana, Green Field Rd, Near Amanora Township Magarpatta, Hadapsar, Pune, Maharashtra -
-                411028 +91 9623169755 / +91 9623472876 contact@movesdancefitness.org
             </amexio-body-ce>
           </amexio-card-ce>
         </amexio-column>
-      </amexio-row>
-      <!-- <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7]" shuffle-interval="2000">
-        <ng-template let-img amexioTemplate="item">
-          <amexio-image [height]="'200px'" path="assets/carousel/{{img}}.jpg">
-          </amexio-image>
-        </ng-template>
-      </amexio-carousel> -->
+        <amexio-column size ="1"
+                [fit]="false">
+        </amexio-column>
+        </amexio-row>
+      </div>
+        </amexio-row>
+      <amexio-row>
+        <amexio-column size ="1"
+                [fit]="false"> 
+        </amexio-column>
 
-    </amexio-viewport-content-body>
-  </amexio-viewport-content>
+        <amexio-column size ="10"
+        [fit]="false"> 
+        <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+          <amexio-header-ce [align]="'space-between'">
+            <amexio-label size="medium-bold">Get In Touch
+            </amexio-label>
+            <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+              <amexio-layout-item>
+                <amexio-image [icon-class]="'fa fa-map-marker'" [tooltip]="'Fontawesome apple'"></amexio-image>
+              </amexio-layout-item>
+            </amexio-layout-columns>
+          </amexio-header-ce>
+          <amexio-body-ce>
+            <p>
+              AEROFIT FUN & FITNESS 1st floor Nirvana, Green Field Rd, Near Amanora Township Magarpatta, Hadapsar, Pune, Maharashtra -
+              411028 </p>
+              <p>+91 9674125890 / +91 9674522001</p> 
+              <p>contact@aerofitdancefitness.org</p>
+          </amexio-body-ce>
+        </amexio-card-ce>
+</amexio-column>
+
+<amexio-column size ="1"
+[fit]="false"> 
+</amexio-column>
+      </amexio-row>
+  
+      </amexio-viewport-content-body>
+    </amexio-viewport-content>
 </amexio-viewport>
