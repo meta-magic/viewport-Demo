@@ -14,6 +14,7 @@ export class ViewportComponent implements OnInit {
 
   gridDesktop: GridConfig;
 
+  facebookLoginData: any;
   constructor(private _gridlayoutService: AmexioGridLayoutService) {
     this.createLayouts();
 
@@ -51,6 +52,10 @@ export class ViewportComponent implements OnInit {
       }]
     }
     ]
+  }
+
+  onLoginClick(data: any) {
+    this.facebookLoginData = data;
   }
 
   ngOnInit() {
