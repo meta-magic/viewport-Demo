@@ -12,50 +12,58 @@ export class ViewportComponent2 implements OnInit {
   categories: any;
   navmenus: any;
   contactList: any;
-  public max:number=5;
-
-  public propertyOption1:number=5;
-  public dealsClosed1: number = 4;
-  public response1: number = 3;
-  public customerResponse1: number = 4;
-
-  public propertyOption2:number=4;
-  public dealsClosed2: number = 4;
-  public response2: number = 5;
-  public customerResponse2: number = 3;
-
-
-  public propertyOption3:number=4;
-  public dealsClosed3: number = 5;
-  public response3: number = 3;
-  public customerResponse3: number = 3;
-
+  sampledatachips: any;
+  sampledatachips1: any;
 
   constructor(private _gridlayoutService : AmexioGridLayoutService) { 
-
-
-    this.contactList = [
-      {
-        'name': 'Ketan Gote',
-        'description': 'UI/UX, Microservice, Kubernetes, Docker ',
-        'imagepath': 'assets/profile/ketan.jpg',
-        'bgcolor': 'linear-gradient(40deg,#12c2e9, #ec38bc)'
-      },
-      {
-        'name': 'Sagar Jadhav',
-        'description': 'Angular, Java, Microservices',
-        'imagepath': 'assets/profile/sagar.jpeg',
-        'bgcolor': 'linear-gradient(40deg,#141E30,#243B55)'
-      },
-      {
-        'name': 'Dattaram Gawas',
-        'description': 'UI / UX Desinger',
-        'imagepath': 'assets/profile/dats.jpg',
-        'bgcolor': 'linear-gradient(40deg,#a8ff78, #78ffd6)'
-      },
-    
-    ];
-
+    this.sampledatachips = [{
+      "icon": "fa fa-check-circle",
+      "label": "Vitrified Balcony ",
+      "color":"#bc8b20",
+      "closable": false,
+    },
+    {
+      "icon": "fa fa-check-circle",
+      "label": "24*7 Security",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Parking",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Close to Mall",
+      "closable": false,
+      "color":"#bc8b20"
+    }]
+    this.sampledatachips1 = [{
+      "icon": "fa fa-check-circle",
+      "label": "Vitrified Balcony ",
+      "color":"#bc8b20",
+      "closable": false,
+    },
+    {
+      "icon": "fa fa-check-circle",
+      "label": "24*7 Security",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Parking",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Close to Mall",
+      "closable": false,
+      "color":"#bc8b20"
+    }]
     this.categories = [{
       id: 'tv',
       name: 'TV'
@@ -97,16 +105,9 @@ export class ViewportComponent2 implements OnInit {
       }]
     }
     ]
-    this.createLayouts();
     
     // Create the Layouts
-    this._gridlayoutService.createLayout(this.gridDesktop);
-  }
-
-  createLayouts() {
-    this.gridDesktop = new GridConfig('LayoutSample1', GridConstants.Desktop)
-    .addlayout(["gridmenu1", "gridmenu2", "gridlogin", "gridlogin"])
-    .addlayout(["gridmenu3", "gridmenu4", "gridlogin", "gridlogin"])
+    // this._gridlayoutService.createLayout(this.gridDesktop);
   }
 
   ngOnInit() {
