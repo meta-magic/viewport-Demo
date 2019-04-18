@@ -1,7 +1,7 @@
 <amexio-viewport [type]="'2'" [scrollable]="true">
     <amexio-viewport-content [scrollable]="false">
         <amexio-viewport-background>
-            <amexio-image [path]="'assets/living-room1.jpg'"></amexio-image>
+            <amexio-image [path]="'assets/living1.jpg'"></amexio-image>
         </amexio-viewport-background>
         <amexio-viewport-content-body>
 
@@ -69,17 +69,17 @@
 
     <amexio-viewport-content [scrollable]="false">
         <amexio-viewport-background>
-            <amexio-image [path]="'assets/img2.jpg'"></amexio-image>
+            <amexio-image [path]="'assets/living2.jpg'"></amexio-image>
         </amexio-viewport-background>
         <amexio-viewport-content-body>
             <amexio-row>
                 <amexio-column size="2" [fit]="false">
                 </amexio-column>
                 <amexio-column size="6" [fit]="false">
-                    <amexio-label [size]="'large-bold'">
+                    <amexio-label [font-color]="'white'" [size]="'large-bold'">
                         CITY EXPERTS in PUNE
                     </amexio-label>
-                    <amexio-label [size]="'medium-bold'">
+                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
                         Reputed sellers in your city who have recently closed deals and are recommended by others...
                     </amexio-label>
                 </amexio-column>
@@ -88,55 +88,55 @@
             <br>
             <amexio-row>
                 <amexio-column size="4" [fit]="false">
-                    <amexio-card-ce align="center">
-                        <amexio-header-ce [background]="'linear-gradient(40deg, #ad791f, #fcff78)'" [height]="'75px'">
-                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
-                                <amexio-label>5.0</amexio-label>
-                            </amexio-badge>
-                            <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im1.png'"></amexio-image>
-                            <amexio-label [size]="'medium-bold'">
-                                Redfin Homes
-                            </amexio-label>
-                        </amexio-header-ce>
-                        <amexio-body-ce align="start">
-                            <amexio-row>
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption1" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed1" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response1" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse1" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>2042 Rent Properties</b>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>984 Operational Localities</b>
-                                </amexio-column>
-                            </amexio-row>
-
-
-                        </amexio-body-ce>
-                        <amexio-action-ce [border-top]="true" [align]="'center'">
-                            <amexio-label [size]="'small-bold'" [enable-click]="true">
-                                SNBP School Road, Hadapsar
-                            </amexio-label>
-                        </amexio-action-ce>
-                    </amexio-card-ce>
+                        <amexio-card-ce [align]="'start'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+                            <amexio-header-ce [align]="'space-between'">
+                                    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                            <amexio-label>5.0</amexio-label>
+                                        </amexio-badge>
+                                        <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im1.png'"></amexio-image>
+                                        <amexio-label [size]="'medium-bold'">
+                                            Redfin Homes
+                                        </amexio-label>
+                                
+                            </amexio-header-ce>
+                            <amexio-body-ce>
+                                    <amexio-row>
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption1" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed1" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response1" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse1" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <b>2042 Rent Properties</b>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <b>984 Operational Localities</b>
+                                            </amexio-column>
+                                        </amexio-row>
+                            </amexio-body-ce>
+                            <amexio-action-ce [align]="'left'">
+                                    <amexio-label [size]="'small-bold'" [enable-click]="true">
+                                            SNBP School Road, Hadapsar
+                                        </amexio-label>
+                            </amexio-action-ce>
+                        </amexio-card-ce>
+                        
                 </amexio-column>
                 <amexio-column size="4" [fit]="false">
                     <amexio-card-ce align="center">
@@ -240,4 +240,20 @@
         </amexio-viewport-content-body>
 
     </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/living3.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+            <amexio-viewport-background>
+                <amexio-image [path]="'assets/living4.jpg'"></amexio-image>
+            </amexio-viewport-background>
+            <amexio-viewport-content-body>
+            </amexio-viewport-content-body>
+        </amexio-viewport-content>
 </amexio-viewport>
