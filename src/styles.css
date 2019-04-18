@@ -14,3 +14,7 @@
 .rowClass .flex-row{
     padding-top: 100px;
 }
+
+body{
+    background: black;
+}

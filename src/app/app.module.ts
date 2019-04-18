@@ -4,6 +4,7 @@ import {AmexioWidgetModule} from 'amexio-ng-extensions';
 import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
 import { Routes } from '@angular/router';
+import {FormsModule} from '@angular/forms';
 const ROUTE: Routes = [
   
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,7 +18,7 @@ const ROUTE: Routes = [
     AppComponent
   ],
   imports: [
-    BrowserModule, AmexioWidgetModule, RouterModule.forRoot(ROUTE,{useHash: true}),
+    BrowserModule, AmexioWidgetModule, RouterModule.forRoot(ROUTE,{useHash: true}),FormsModule
 
   ],
   providers: [],

@@ -11,8 +11,50 @@ export class ViewportComponent2 implements OnInit {
   gridDesktop: GridConfig;
   categories: any;
   navmenus: any;
+  contactList: any;
+  public max:number=5;
+
+  public propertyOption1:number=5;
+  public dealsClosed1: number = 4;
+  public response1: number = 3;
+  public customerResponse1: number = 4;
+
+  public propertyOption2:number=4;
+  public dealsClosed2: number = 4;
+  public response2: number = 5;
+  public customerResponse2: number = 3;
+
+
+  public propertyOption3:number=4;
+  public dealsClosed3: number = 5;
+  public response3: number = 3;
+  public customerResponse3: number = 3;
+
 
   constructor(private _gridlayoutService : AmexioGridLayoutService) { 
+
+
+    this.contactList = [
+      {
+        'name': 'Ketan Gote',
+        'description': 'UI/UX, Microservice, Kubernetes, Docker ',
+        'imagepath': 'assets/profile/ketan.jpg',
+        'bgcolor': 'linear-gradient(40deg,#12c2e9, #ec38bc)'
+      },
+      {
+        'name': 'Sagar Jadhav',
+        'description': 'Angular, Java, Microservices',
+        'imagepath': 'assets/profile/sagar.jpeg',
+        'bgcolor': 'linear-gradient(40deg,#141E30,#243B55)'
+      },
+      {
+        'name': 'Dattaram Gawas',
+        'description': 'UI / UX Desinger',
+        'imagepath': 'assets/profile/dats.jpg',
+        'bgcolor': 'linear-gradient(40deg,#a8ff78, #78ffd6)'
+      },
+    
+    ];
 
     this.categories = [{
       id: 'tv',

@@ -7,6 +7,7 @@ import {RouterModule} from '@angular/router';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
 const ROUTE: Routes = [
 
     {
@@ -25,7 +26,7 @@ const ROUTE: Routes = [
     ViewportComponent2
   ],
   imports: [
-    CommonModule, AmexioWidgetModule, RouterModule.forChild(ROUTE),
+    CommonModule, AmexioWidgetModule, RouterModule.forChild(ROUTE), FormsModule
 
   ],
   providers: [],
