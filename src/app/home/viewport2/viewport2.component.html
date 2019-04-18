@@ -8,11 +8,7 @@
             <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'EyePropertyRecord.com'" [logo]="'assets/3.png'">
                 <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
                 </amexio-nav-item>
-                <amexio-nav-item position-right [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
                 <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
-                </amexio-nav-item>
-                <amexio-nav-item position-right [title]="'Help'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
                 </amexio-nav-item>
                 <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-user'" [title]="'Login'">
                 </amexio-nav-item>
@@ -77,10 +73,10 @@
                 </amexio-column>
                 <amexio-column size="6" [fit]="false">
                     <amexio-label [font-color]="'white'" [size]="'large-bold'">
-                        CITY EXPERTS in PUNE
+                        AREA EXPERTS in WAGHOLI
                     </amexio-label>
                     <amexio-label [font-color]="'white'" [size]="'medium-bold'">
-                        Reputed sellers in your city who have recently closed deals and are recommended by others...
+                        Reputed sellers in your area who have recently closed deals and are recommended by others...
                     </amexio-label>
                 </amexio-column>
             </amexio-row>
@@ -132,109 +128,11 @@
                             </amexio-body-ce>
                             <amexio-action-ce [align]="'left'">
                                     <amexio-label [size]="'small-bold'" [enable-click]="true">
-                                            SNBP School Road, Hadapsar
+                                            SNBP School Road, Wagholi
                                         </amexio-label>
                             </amexio-action-ce>
                         </amexio-card-ce>
                         
-                </amexio-column>
-                <amexio-column size="4" [fit]="false">
-                    <amexio-card-ce align="center">
-                        <amexio-header-ce [background]="'linear-gradient(40deg, #ad791f, #fcff78)'" [height]="'75px'">
-                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
-                                <amexio-label>4.8</amexio-label>
-                            </amexio-badge>
-                            <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im2.png'"></amexio-image>
-                            <amexio-label [size]="'medium-bold'">
-                                Trulia Property Expert
-                            </amexio-label>
-                        </amexio-header-ce>
-                        <amexio-body-ce align="start">
-                            <amexio-row>
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption2" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed2" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response2" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse2" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>1546 Rent Properties</b>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>722 Operational Localities</b>
-                                </amexio-column>
-                            </amexio-row>
-                        </amexio-body-ce>
-                        <amexio-action-ce [border-top]="true" [align]="'center'">
-                            <amexio-label [size]="'small-bold'" [enable-click]="true">
-                                Magarpatta City Hadapsar
-                            </amexio-label>
-                        </amexio-action-ce>
-                    </amexio-card-ce>
-                </amexio-column>
-                <amexio-column size="4" [fit]="false">
-                    <amexio-card-ce align="center">
-                        <amexio-header-ce [background]="'linear-gradient(40deg, #ad791f, #fcff78)'" [height]="'75px'">
-                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
-                                <amexio-label>4.5</amexio-label>
-                            </amexio-badge>
-                            <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im3.png'"></amexio-image>
-                            <amexio-label [size]="'medium-bold'">
-                                Zenfolia Property Dealers
-                            </amexio-label>
-                        </amexio-header-ce>
-                        <amexio-body-ce align="start">
-                            <amexio-row>
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption3" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed3" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response3" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse3" [max]="max" [read-only]="true">
-                                    </amexio-rating-input>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>242 Rent Properties</b>
-                                </amexio-column>
-
-                                <amexio-column size="6" [fit]="false">
-                                    <b>84 Operational Localities</b>
-                                </amexio-column>
-                            </amexio-row>
-                        </amexio-body-ce>
-                        <amexio-action-ce [border-top]="true" [align]="'center'">
-                            <amexio-label [size]="'small-bold'" [enable-click]="true">
-                                Shitaladevi Nagar, Mundhwa
-                            </amexio-label>
-                        </amexio-action-ce>
-                    </amexio-card-ce>
                 </amexio-column>
             </amexio-row>
         </amexio-viewport-content-body>
@@ -246,6 +144,71 @@
             <amexio-image [path]="'assets/living3.jpg'"></amexio-image>
         </amexio-viewport-background>
         <amexio-viewport-content-body>
+                <amexio-row>
+                        <amexio-column size="2" [fit]="false">
+                        </amexio-column>
+                        <amexio-column size="6" [fit]="false">
+                            <amexio-label [font-color]="'red'" [size]="'large-bold'">
+                                AREA EXPERTS in HADAPSAR
+                            </amexio-label>
+                            <amexio-label [font-color]="'red'" [size]="'medium-bold'">
+                                Reputed sellers in your area who have recently closed deals and are recommended by others...
+                            </amexio-label>
+                        </amexio-column>
+                    </amexio-row>
+                    <br>
+                    <br>
+                    <amexio-row>
+                        <amexio-column size="4" [fit]="false">
+                            <amexio-card-ce align="center">
+                                <amexio-header-ce [background]="'linear-gradient(40deg, #ad791f, #fcff78)'" [height]="'75px'">
+                                    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                        <amexio-label>4.8</amexio-label>
+                                    </amexio-badge>
+                                    <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im2.png'"></amexio-image>
+                                    <amexio-label [size]="'medium-bold'">
+                                        Trulia Property Expert
+                                    </amexio-label>
+                                </amexio-header-ce>
+                                <amexio-body-ce align="start">
+                                    <amexio-row>
+                                        <amexio-column size="6" [fit]="false">
+                                            <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption2" [max]="max" [read-only]="true">
+                                            </amexio-rating-input>
+                                        </amexio-column>
+        
+                                        <amexio-column size="6" [fit]="false">
+                                            <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed2" [max]="max" [read-only]="true">
+                                            </amexio-rating-input>
+                                        </amexio-column>
+        
+                                        <amexio-column size="6" [fit]="false">
+                                            <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response2" [max]="max" [read-only]="true">
+                                            </amexio-rating-input>
+                                        </amexio-column>
+        
+                                        <amexio-column size="6" [fit]="false">
+                                            <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse2" [max]="max" [read-only]="true">
+                                            </amexio-rating-input>
+                                        </amexio-column>
+        
+                                        <amexio-column size="6" [fit]="false">
+                                            <b>1546 Rent Properties</b>
+                                        </amexio-column>
+        
+                                        <amexio-column size="6" [fit]="false">
+                                            <b>722 Operational Localities</b>
+                                        </amexio-column>
+                                    </amexio-row>
+                                </amexio-body-ce>
+                                <amexio-action-ce [border-top]="true" [align]="'center'">
+                                    <amexio-label [size]="'small-bold'" [enable-click]="true">
+                                        Magarpatta City Hadapsar
+                                    </amexio-label>
+                                </amexio-action-ce>
+                            </amexio-card-ce>
+                        </amexio-column>
+                    </amexio-row>
         </amexio-viewport-content-body>
     </amexio-viewport-content>
 
@@ -254,6 +217,71 @@
                 <amexio-image [path]="'assets/living4.jpg'"></amexio-image>
             </amexio-viewport-background>
             <amexio-viewport-content-body>
+                    <amexio-row>
+                            <amexio-column size="2" [fit]="false">
+                            </amexio-column>
+                            <amexio-column size="6" [fit]="false">
+                                <amexio-label [font-color]="'red'" [size]="'large-bold'">
+                                    AREA EXPERTS in MUNDHWA
+                                </amexio-label>
+                                <amexio-label [font-color]="'red'" [size]="'medium-bold'">
+                                    Reputed sellers in your area who have recently closed deals and are recommended by others...
+                                </amexio-label>
+                            </amexio-column>
+                        </amexio-row>
+                        <br>
+                        <br>
+                        <amexio-row>
+                            <amexio-column size="4" [fit]="false">
+                                <amexio-card-ce align="center">
+                                    <amexio-header-ce [background]="'linear-gradient(40deg, #ad791f, #fcff78)'" [height]="'75px'">
+                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                            <amexio-label>4.5</amexio-label>
+                                        </amexio-badge>
+                                        <amexio-image width="75px" [c-class]="'card-img-center'" height="75px" [filter]="'round'" [path]="'assets/card/im3.png'"></amexio-image>
+                                        <amexio-label [size]="'medium-bold'">
+                                            Zenfolia Property Dealers
+                                        </amexio-label>
+                                    </amexio-header-ce>
+                                    <amexio-body-ce align="start">
+                                        <amexio-row>
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Property Options'" [(ngModel)]="propertyOption3" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Deals Closed'" [(ngModel)]="dealsClosed3" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Response'" [(ngModel)]="response3" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <amexio-rating-input [field-label]="'Customer Response'" [(ngModel)]="customerResponse3" [max]="max" [read-only]="true">
+                                                </amexio-rating-input>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <b>242 Rent Properties</b>
+                                            </amexio-column>
+            
+                                            <amexio-column size="6" [fit]="false">
+                                                <b>84 Operational Localities</b>
+                                            </amexio-column>
+                                        </amexio-row>
+                                    </amexio-body-ce>
+                                    <amexio-action-ce [border-top]="true" [align]="'center'">
+                                        <amexio-label [size]="'small-bold'" [enable-click]="true">
+                                            Shitaladevi Nagar, Mundhwa
+                                        </amexio-label>
+                                    </amexio-action-ce>
+                                </amexio-card-ce>
+                            </amexio-column>
+                        </amexio-row>
             </amexio-viewport-content-body>
         </amexio-viewport-content>
 </amexio-viewport>

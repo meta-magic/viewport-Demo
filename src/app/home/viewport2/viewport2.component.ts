@@ -86,6 +86,15 @@ export class ViewportComponent2 implements OnInit {
       }, {
         "text": "Find an Agent"
       }]
+    },
+    {
+      "text": "About Us",
+      "icon": "fa fa-address-book-o fa-fw",
+      "submenus": [{
+        "text": "Contact"
+      }, {
+        "text": "Help"
+      }]
     }
     ]
     this.createLayouts();
