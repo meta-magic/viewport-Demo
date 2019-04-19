@@ -11,7 +11,6 @@ export class ViewportComponent2 implements OnInit {
   gridDesktop: GridConfig;
   categories: any;
   navmenus: any;
-  contactList: any;
   sampledatachips: any;
   sampledatachips1: any;
 
@@ -61,6 +60,12 @@ export class ViewportComponent2 implements OnInit {
     {
       "icon": "fa fa-check-circle",
       "label": "Close to Mall",
+      "closable": false,
+      "color":"#bc8b20"
+    },
+    {
+      "icon": "fa fa-wifi",
+      "label": "wifi",
       "closable": false,
       "color":"#bc8b20"
     }]
