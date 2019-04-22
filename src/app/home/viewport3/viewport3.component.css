@@ -1,0 +1,42 @@
+.localsearch .inputgroup {
+    display: inline-block!important;
+
+    background: white;
+     /* border-bottom: 1px solid rgba(0, 0, 0, 0.42);  */
+    padding-left: 5px;
+
+};
+
+.localsearch .inputgroup ::placeholder{
+    padding-left: 5px!important;
+}
+.localsearch  .button-default {
+     height: 43px!important;
+     border-radius: 0px!important;
+}
+.searchBtn .button-default{
+    border: none!important;
+}
+.localsearch  .button-primary{
+     height: 41.5px!important;
+      border-radius: 0px!important;
+      border:none!important;
+      box-shadow: none!important;
+}
+
+.localsearch .input-control{
+        border-bottom: none!important;
+
+
+}
+
+.localsearchtext .input-control {
+    width: 520px!important;
+    padding-left: 5px!important;
+    border-bottom: none!important;
+
+}
+.localsearchtext .input-control-feedback{
+    bottom: 2px!important;
+}
+

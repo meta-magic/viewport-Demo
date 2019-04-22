@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {AmexioWidgetModule} from 'amexio-ng-extensions';
 import { ViewportComponent } from './viewport/viewport.component';
 import { ViewportComponent2 } from './viewport2/viewport2.component';
+import {ViewportComponent3} from './viewport3/viewport3.component';
 import {RouterModule} from '@angular/router';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
@@ -15,7 +16,8 @@ const ROUTE: Routes = [
         children: [
           { path: '', redirectTo: 'scrollable-viewport', pathMatch: 'full' },
           { path: 'scrollable-viewport', component: ViewportComponent },
-          { path: 'viewport', component: ViewportComponent2 }
+          { path: 'viewport', component: ViewportComponent2 },
+          { path: 'video-viewport', component: ViewportComponent3 }
         ]
         }
 ];
@@ -23,6 +25,7 @@ const ROUTE: Routes = [
   declarations: [
     HomeComponent,
     ViewportComponent,
+    ViewportComponent3,
     ViewportComponent2
   ],
   imports: [

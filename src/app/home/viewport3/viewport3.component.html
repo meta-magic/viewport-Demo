@@ -1,0 +1,277 @@
+<amexio-viewport [type]="'2'" [scrollable]="true">
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-video-player path="assets/video/3.webm">
+            </amexio-video-player>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+
+            <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'Greenhouse Farms'" [logo]="'assets/farm.png'">
+                <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
+                </amexio-nav-item>
+                <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
+                </amexio-nav-item>
+                <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-user'" [title]="'Login'">
+                </amexio-nav-item>
+            </amexio-nav>
+            <div>
+                <amexio-row>
+                    <amexio-column size="12" style="padding-top:14%">
+                    </amexio-column>
+                </amexio-row>
+                <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                            <amexio-layout-item>
+                                <amexio-label size="large-bold" font-color="white">
+                                    GREEN HOUSE FARMS
+                                </amexio-label>
+                                <br>
+                                <br>
+                                <amexio-label size="large-bold" font-color="white">
+                                    Imagine Yourself here....
+                                </amexio-label>
+                            </amexio-layout-item>
+
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+                <!-- <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
+                            <amexio-layout-item>
+                                <amexio-button [label]="'Buy'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
+                                </amexio-button>
+                                <amexio-button [label]="'Sell'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
+                                </amexio-button>
+                                <div class="localsearch">
+                                    <amexio-row>
+                                        <div class="inputClass">
+                                            <amexio-dropdown style="width:400px" [place-holder]="'Choose'" name="category" [field-label]="''" [data]="categories" [display-field]="'name'"
+                                                [value-field]="'id'" [enable-sort]="true" [sort]="'asc'">
+                                            </amexio-dropdown>
+                                        </div>
+                                        <div class="inputClass">
+                                            <amexio-text-input style="width:650px" [field-label]="'label'" name="name" [has-label]="false" [place-holder]="'Search'"
+                                                [icon-feedback]="true" class="localsearchtext">
+                                            </amexio-text-input>
+                                        </div>
+                                        <amexio-button [label]="'Search'" [size]="'large'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false"
+                                            [size]="'default'" [loading]="false" [block]="false" [bg-color]="'red'">
+                                        </amexio-button>
+                                    </amexio-row>
+                                </div>
+                            </amexio-layout-item>
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns> -->
+            </div>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/viewport3/horseriding.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <amexio-row>
+                <amexio-column size="12" style="padding-top:10%">
+                </amexio-column>
+            </amexio-row>
+            <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+                    <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                        <amexio-layout-item>
+                            <amexio-row>
+                                <amexio-column size="1" [fit]="false">
+                                </amexio-column>
+                                <amexio-column size="4" [fit]="false">
+                                    <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(139,69,19,.3)'">
+                                        <amexio-header-ce [background]="'linear-gradient(40deg,#748262,#8fa86f)'" [height]="'75px'" align="center">
+                                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                                <amexio-label>9:05 AM</amexio-label>
+                                            </amexio-badge>
+                                            <amexio-label [size]="'large-bold'">
+                                                Morning Rush </amexio-label>
+                                        </amexio-header-ce>
+                                        <amexio-body-ce>
+                                            <amexio-row>
+                                                <amexio-column size="12" [fit]="false">
+                                                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                                        As the sun crests the warm red mountains and the summer glow begins to fill the valley below, you realize that this is what life is about. Family, fun and the open space of the West.
+                                                    </amexio-label>
+                                                </amexio-column>
+                                            </amexio-row>
+                                            <amexio-row>
+                                                <amexio-column size="6" [fit]="false">
+                
+                                                </amexio-column>
+                                            </amexio-row>
+                                        </amexio-body-ce>
+                                    </amexio-card-ce>
+                
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-layout-item>
+
+                    </amexio-layout-columns>
+                </amexio-layout-item>
+            </amexio-layout-columns>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/viewport3/lunch.jpeg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <amexio-row>
+                <amexio-column size="12" style="padding-top:10%">
+                </amexio-column>
+            </amexio-row>
+            <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+                    <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                        <amexio-layout-item>
+                            <amexio-row>
+                                <amexio-column size="1" [fit]="false">
+                                </amexio-column>
+                                <amexio-column size="4" [fit]="false">
+                                    <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(139,69,19,.3)'">
+                                        <amexio-header-ce [background]="'linear-gradient(40deg,#748262,#8fa86f)'" [height]="'75px'" align="center">
+                                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                                <amexio-label>12:16 PM</amexio-label>
+                                            </amexio-badge>
+                                            <amexio-label [size]="'large-bold'">
+                                                Lunch Commute </amexio-label>
+                                        </amexio-header-ce>
+                                        <amexio-body-ce>
+                                            <amexio-row>
+                                                <amexio-column size="12" [fit]="false">
+                                                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                                        After an exciting day of riding, hiking, fishing and exploring all the ranch has to offer, nothing is better than a home cooked meal, fresh and creative, to keep you going for the next half of the day.
+                                                    </amexio-label>
+                                                </amexio-column>
+                                            </amexio-row>
+                                            <amexio-row>
+                                                <amexio-column size="6" [fit]="false">
+                
+                                                </amexio-column>
+                                            </amexio-row>
+                                        </amexio-body-ce>
+                                    </amexio-card-ce>
+                
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-layout-item>
+
+                    </amexio-layout-columns>
+                </amexio-layout-item>
+            </amexio-layout-columns>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/viewport3/evening.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <amexio-row>
+                <amexio-column size="12" style="padding-top:10%">
+                </amexio-column>
+            </amexio-row>
+            <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+                    <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                        <amexio-layout-item>
+                            <amexio-row>
+                                <amexio-column size="1" [fit]="false">
+                                </amexio-column>
+                                <amexio-column size="4" [fit]="false">
+                                    <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(0,0,0,.3)'">
+                                        <amexio-header-ce [background]="'linear-gradient(40deg,#748262,#8fa86f)'" [height]="'75px'" align="center">
+                                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                                <amexio-label>03:09 PM</amexio-label>
+                                            </amexio-badge>
+                                            <amexio-label [size]="'large-bold'">
+                                                Stand Tall </amexio-label>
+                                        </amexio-header-ce>
+                                        <amexio-body-ce>
+                                            <amexio-row>
+                                                <amexio-column size="12" [fit]="false">
+                                                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                                        Take advantage of all Red Rock Ranch has to offer by hitting the mountain trails for unforgettable views of the Teton Mountains and the picturesque Gros Ventre valley.
+                                                    </amexio-label>
+                                                </amexio-column>
+                                            </amexio-row>
+                                            <amexio-row>
+                                                <amexio-column size="6" [fit]="false">
+                
+                                                </amexio-column>
+                                            </amexio-row>
+                                        </amexio-body-ce>
+                                    </amexio-card-ce>
+                
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-layout-item>
+
+                    </amexio-layout-columns>
+                </amexio-layout-item>
+            </amexio-layout-columns>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/viewport3/camping.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <amexio-row>
+                <amexio-column size="12" style="padding-top:10%">
+                </amexio-column>
+            </amexio-row>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="2" [fit]="false">
+                </amexio-column>
+            </amexio-row>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="1" [fit]="false">
+                </amexio-column>
+                <amexio-column size="4" [fit]="false">
+                    <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(0,0,0,.3)'">
+                        <amexio-header-ce [background]="'linear-gradient(40deg,#748262,#8fa86f)'" [height]="'75px'" align="center">
+                            <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                                <amexio-label>10:15 PM</amexio-label>
+                            </amexio-badge>
+                            <amexio-label [size]="'medium-bold'">
+                                Find Yourself Here...
+                            </amexio-label>
+
+                        </amexio-header-ce>
+                        <amexio-body-ce>
+                            <amexio-row>
+                                <amexio-column size="12" [fit]="false">
+                                        <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                                Be it a world class hike, fishing on the streams or riding our gorgeous mountains – kick back and relax in the mountain fresh air as you look up at a sky full of stars.                                            </amexio-label>
+                                </amexio-column>
+                            </amexio-row>
+                            <amexio-row>
+                                <amexio-column size="6" [fit]="false">
+
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-body-ce>
+                    </amexio-card-ce>
+
+                </amexio-column>
+            </amexio-row>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+</amexio-viewport>
