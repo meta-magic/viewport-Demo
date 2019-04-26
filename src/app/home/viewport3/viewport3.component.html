@@ -14,58 +14,22 @@
                 <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-user'" [title]="'Login'">
                 </amexio-nav-item>
             </amexio-nav>
-            <div>
+            <div class="rowClass">
                 <amexio-row>
-                    <amexio-column size="12" style="padding-top:14%">
-                    </amexio-column>
+                  <amexio-column size="1" [fit]="false">
+                  </amexio-column>
+                  <amexio-column size="3" [fit]="false">
+                      <amexio-label [font-color]="'white'" [size]="'medium'">
+                        There is pleasure in the pathless woods,
+                        <p>There is rapture in the lonely shore,</p>
+                        <p>There is society where none intrudes,</p>
+                        <p>By the deep sea, or the jungle, and music in its roar;</p>
+                        <p>I love not Man the less, but Nature more.</p>
+                        <p>Lord Byron</p>
+                      </amexio-label>
+                  </amexio-column>
                 </amexio-row>
-                <amexio-layout-columns [orientation]="'vertical'" [border]="false">
-                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
-                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
-                            <amexio-layout-item>
-                                <amexio-label size="large-bold" font-color="white">
-                                    GREEN HOUSE FARMS
-                                </amexio-label>
-                                <br>
-                                <br>
-                                <amexio-label size="large-bold" font-color="white">
-                                    Imagine Yourself here....
-                                </amexio-label>
-                            </amexio-layout-item>
-
-                        </amexio-layout-columns>
-                    </amexio-layout-item>
-                </amexio-layout-columns>
-                <!-- <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
-                    <amexio-layout-item [fit]="true">
-                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
-                            <amexio-layout-item>
-                                <amexio-button [label]="'Buy'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
-                                </amexio-button>
-                                <amexio-button [label]="'Sell'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
-                                </amexio-button>
-                                <div class="localsearch">
-                                    <amexio-row>
-                                        <div class="inputClass">
-                                            <amexio-dropdown style="width:400px" [place-holder]="'Choose'" name="category" [field-label]="''" [data]="categories" [display-field]="'name'"
-                                                [value-field]="'id'" [enable-sort]="true" [sort]="'asc'">
-                                            </amexio-dropdown>
-                                        </div>
-                                        <div class="inputClass">
-                                            <amexio-text-input style="width:650px" [field-label]="'label'" name="name" [has-label]="false" [place-holder]="'Search'"
-                                                [icon-feedback]="true" class="localsearchtext">
-                                            </amexio-text-input>
-                                        </div>
-                                        <amexio-button [label]="'Search'" [size]="'large'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false"
-                                            [size]="'default'" [loading]="false" [block]="false" [bg-color]="'red'">
-                                        </amexio-button>
-                                    </amexio-row>
-                                </div>
-                            </amexio-layout-item>
-                        </amexio-layout-columns>
-                    </amexio-layout-item>
-                </amexio-layout-columns> -->
-            </div>
+              </div>
         </amexio-viewport-content-body>
     </amexio-viewport-content>
 
