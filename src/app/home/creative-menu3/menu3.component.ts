@@ -26,7 +26,36 @@ export class MenuThreeComponent implements OnInit {
     this.gridDesktop = new GridConfig('LayoutSample1', GridConstants.Desktop)
       .addlayout(["gridmenu1", "gridmenu2", "gridmenu3", "gridlogin"])
       .addlayout(["gridmenu4", "gridmenu5", "gridmenu6", "gridlogin1"])
-
+      this.navmenus = [{
+        "text": "Destination",
+        "icon": "fa fa-television fa-fw",
+        "submenus": [{
+          "text": "Singapore",
+        }, {
+          "text": "Maldives",
+        }, {
+          "text": "Dubai",
+        }]
+      },
+      {
+        "text": "Activities",
+        "icon": "fa fa-picture-o",
+        "submenus": [{
+          "text": "Photography"
+        }, {
+          "text": "Base Camp"
+        }]
+      },
+      {
+        "text": "About Us",
+        "icon": "fa fa-address-book-o fa-fw",
+        "submenus": [{
+          "text": "Contact"
+        }, {
+          "text": "Privacy Policies"
+        }]
+      }
+      ],
     this.tempData = [
       {
         label: "About"
