@@ -6,7 +6,7 @@
     </amexio-viewport-background>
 
     <amexio-viewport-content-body>
-        <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'Infografic'" [logo]="'assets/img.png'">
+        <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'Fernweh'" [logo]="'assets/img.png'">
           <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
           </amexio-nav-item>
           <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
