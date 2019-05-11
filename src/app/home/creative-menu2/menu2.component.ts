@@ -3,8 +3,8 @@ import { AmexioGridLayoutService, GridConfig, GridConstants } from 'amexio-ng-ex
 
 @Component({
   selector: 'menu-two',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  templateUrl: './menu2.component.html',
+  styleUrls: ['./menu2.component.css']
 })
 export class MenuTwoComponent implements OnInit {
 

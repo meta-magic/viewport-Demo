@@ -9,9 +9,9 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MenuOneComponent } from './creative-menu1/menu.component';
-import { MenuTwoComponent } from './creative-menu2/menu.component';
-import { MenuThreeComponent } from './creative-menu3/menu.component';
+import { MenuOneComponent } from './creative-menu1/menu1.component';
+import { MenuTwoComponent } from './creative-menu2/menu2.component';
+import { MenuThreeComponent } from './creative-menu3/menu3.component';
 const ROUTE: Routes = [
 
   {
@@ -22,8 +22,8 @@ const ROUTE: Routes = [
       { path: 'viewport', component: ViewportComponent2 },
       { path: 'video-viewport', component: ViewportComponent3 },
       { path: 'menu-one', component: MenuOneComponent },
-      // { path: 'menu-two', component: MenuTwoComponent },
-      // { path: 'menu-three', component: MenuThreeComponent },
+      { path: 'menu-two', component: MenuTwoComponent },
+      { path: 'menu-three', component: MenuThreeComponent },
 
     ]
   }
