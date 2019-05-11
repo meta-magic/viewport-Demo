@@ -22,8 +22,8 @@ const ROUTE: Routes = [
       { path: 'viewport', component: ViewportComponent2 },
       { path: 'video-viewport', component: ViewportComponent3 },
       { path: 'menu-one', component: MenuOneComponent },
-      { path: 'menu-two', component: MenuTwoComponent },
-      { path: 'menu-three', component: MenuThreeComponent },
+      // { path: 'menu-two', component: MenuTwoComponent },
+      // { path: 'menu-three', component: MenuThreeComponent },
 
     ]
   }
