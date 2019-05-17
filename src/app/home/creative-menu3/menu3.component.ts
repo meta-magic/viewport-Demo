@@ -58,27 +58,33 @@ export class MenuThreeComponent implements OnInit {
       ],
     this.tempData = [
       {
-        label: "About"
+        label: "Home"
+
+      },
+      
+      {
+        label: "flights"
 
       },
       {
-        label: "Illustration"
+        label: "hotels"
+
+      },
+      
+      {
+        label: "Discover"
 
       },
       {
-        label: "Photography"
+        label: "Things to do"
 
       },
       {
-        label: "Web Design"
+        label: "Vacation Packages"
 
       },
       {
-        label: "Personal Project"
-
-      },
-      {
-        label: "Contact"
+        label: "help"
 
       }
 

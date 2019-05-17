@@ -56,28 +56,27 @@ export class MenuOneComponent implements OnInit {
       ],
     this.tempData = [
       {
-        label: "About"
+        label: "Home"
 
       },
       {
-        label: "Illustration"
+        label: "Features"
 
       },
       {
-        label: "Photography"
+        label: "Explore"
 
       },
       {
-        label: "Web Design"
+        label: "Subscription"
 
       },
       {
-        label: "Personal Project"
+        label: "Template"
 
       },
       {
-        label: "Contact"
-
+        label: "Support"
       }
 
     ]
