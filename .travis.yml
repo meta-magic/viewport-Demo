@@ -30,7 +30,7 @@ script:
 after_success: 
   - codecov
   - git add docs
-  - git commit -m "[skip travis]  docs-updated"
+  - git commit -m "[skip travis]  veiwport-updated"
   - git push  "https://deepali-arvind:${GITHUB_TOKEN}@github.com/meta-magic/viewport-Demo.git" HEAD:master
 cache:
   yarn: true
