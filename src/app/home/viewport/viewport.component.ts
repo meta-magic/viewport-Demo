@@ -31,7 +31,7 @@ export class ViewportComponent implements OnInit {
       "text": "Classes",
       "icon": "fa fa-television fa-fw",
       "submenus": [{
-        "text": "Hip pop",
+        "text": "Hip Hop",
       }, {
         "text": "Zumba",
       }, {

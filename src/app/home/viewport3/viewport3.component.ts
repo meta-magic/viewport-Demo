@@ -82,7 +82,7 @@ export class ViewportComponent3 implements OnInit {
       "text": "About",
       "icon": "fa fa-address-book-o fa-fw",
       "submenus": [{
-        "text": "Accomodations"
+        "text": "Accommodations"
       }, {
         "text": "Dining"
       }, {
